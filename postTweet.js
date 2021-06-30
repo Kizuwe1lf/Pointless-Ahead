@@ -13,6 +13,6 @@ var client = new Twitter({
 module.exports = (message) => {
     message = `${message}\n\n\n\nDarkSoulsMessageBot\n#PointlessAhead`;
     client.post('statuses/update', { status: message }, function (error, tweet, response) {
-        if (error) throw error;
+		console.log('.')
     });
 };
